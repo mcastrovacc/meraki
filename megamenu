@@ -1,0 +1,55 @@
+.et_pb_menu .et-menu>li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*show hamburger menu on desktop*/
+
+@media (min-width: 980px) {
+.et_pb_menu .et_pb_menu__menu, .et_pb_fullwidth_menu .et_pb_menu__menu {
+    display: none;
+}	
+
+/*change color hamburger menu on desktop*/
+.et_mobile_nav_menu {
+  color:#000000 !important;
+}
+	
+.et_pb_menu .et_mobile_nav_menu, .et_pb_fullwidth_menu .et_mobile_nav_menu {
+    display: flex;
+    float: none;
+    margin: 0 6px;
+    align-items: center;
+	margin-right:-90vw !important;
+	margin-top:-7vw !important;
+}
+}
+
+.mobile_menu_bar:before {
+	color:#434243 !important;
+}
+
+/*add a word beside the hamburger menu*/
+.et_mobile_nav_menu:after {
+  content:'MENÚ';
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  writing-mode: horizontal-rl;
+  position: relative !important;
+  margin-right: 1px;
+	
+}
+/*add x when opened hamburger icon*/
+.mobile_nav.opened .mobile_menu_bar:before {
+ content: '\4d';
+color: rgb(0,0,0);
+}
+
+.et_pb_menu ul {
+list-style-type: none!important;
+border-top: none;
+border: 0px;
+margin-left:77vw !important;
+padding-left: 0px;
+ width: 22%;
+}
